@@ -2,32 +2,31 @@
 
 ## Learning Goals
 
-- Define the purpose of a version control system
-- Identify benefits of version control systems
-- Recognize useful Git vocabulary terms
+- Define the purpose of a version control system.
+- Identify the benefits of version control systems.
+- Recognize useful Git vocabulary terms.
 
 ## Introduction
 
-Imagine you are part of a team of developers working on a popular web
-application with many features. Your app may have a large, complex code
-base which means that, at any given time, there are likely to be multiple
-projects going on and multiple developers working on different parts of the
-software.
+Imagine there is a team of developers working on a popular web application with
+many features. The app may have a large, complex code base which means that, at
+any given time, there are likely to be multiple projects going on and multiple
+developers working on different parts of the software.
 
 This type of scenario is quite common, and can easily lead to problems:
 
 - Imagine someone is working on a new feature, or incorporating a new technique,
   or refactoring the code to make it more efficient and something they change
-  breaks the app. How can we "back up" to the most recent working version of the
-  code?
+  breaks the app. How can they "back up" to the most recent working version of
+  the code?
 
-- There could be some part of the application that overlaps with the work
-  being done by more than one developer. How can we ensure that no
-  inconsistencies or conflicts work their way into the code?
+- There could be some part of the application that overlaps with the work being
+  done by more than one developer. How can they ensure that no inconsistencies
+  or conflicts work their way into the code?
 
-- How can we maintain a record of the changes that are being made and why? Over
-  time, memories about how things have been done can fade, or new people may
-  join the team who don't have that background knowledge. This can lead to
+- How can they maintain a record of the changes that are being made and why?
+  Over time, memories about how things have been done can fade, or new people
+  may join the team who don't have that background knowledge. This can lead to
   inconsistencies in the code or to wasted time revisiting issues that have been
   addressed in the past.
 
@@ -55,21 +54,21 @@ and instantly get back to your last-known "good" state if something breaks.
 > Read more in his essay ["Hackers and Painters."][hp]
 
 There are several VCS's available, but the most popular — and the one you'll
-learn to use in this program — is called **Git**.
+learn to use in this module — is called **Git**.
 
 ## Identify Benefits of Version Control Systems
 
 There are a number benefits we get when we use a VCS such as Git to manage our
 work:
 
-- Automatically create a backup of your work
-- Provide an easy way to undo mistakes and restore a previous version of your
-  work
-- Document changes with a log that describes what's been changed and why
-- Keep file names and hierarchies consistent and organized
+- Automatically create a backup of our project.
+- Provide an easy way to undo mistakes and restore a previous version of the
+  project.
+- Document changes with a log that describes what's been changed and why.
+- Easily view the differences between two versions of the project.
 - Branch work off into multiple "sandboxes" (called **branches** in Git) that
-  allow developers to experiment without impacting other branches
-- Collaborate with others without disturbing each other's or our own work
+  allow developers to experiment without impacting other branches.
+- Collaborate with others without disturbing each other's or our own work.
 
 And beyond these are even more advanced features that will help you optimize
 your workflow once you've learned the basics. If that feels daunting, it's OK:
@@ -105,16 +104,29 @@ work in practice — that part will come later.
 - **branch/default branch**: A Git repo can support multiple **branches** that
   make it possible for multiple developers to be working on the code at the same
   time. When you initialize a new Git repo, a **default branch** is created
-  where your work will be tracked by default. If you configured Git using the
-  instructions given earlier in the prework, the name of the branch will be
-  `main`, but you will also see older repos that use `master` as the default
-  branch.
+  where your work will be tracked. Historically, Git has used `master` as the
+  default name of the default branch, but many organizations in the Git
+  community, including GitHub, are moving away from using `master` and using
+  `main` instead. You will still see `master` used in many repos, especially
+  older ones.
+  
+**Note**: depending on how your Git installation is configured, your default may
+be either `main` or `master`. If you'd like to set up your Git to use `main` by
+default (which is what you'll see in these course materials), you can run the
+following command in your terminal:
+
+```console
+git config --global init.defaultBranch main
+```
 
 ## Conclusion
 
-Git is one of the most valuable tools you will use as a developer. You will
-learn the basics of using Git in this section, and then will apply what you've
-learned when you create your project in the next section.
+Git is a widely-used and very valuable tool for managing changes and versions of
+projects, as well as for collaborating. Because many companies in the tech
+industry use Git, particularly in software engineering, it's important that you
+get used to working with it. In this module, you will learn many of the most
+commonly used workflows and develop the skills that will be expected by many
+potential employers.
 
 ## Resources
 
@@ -124,4 +136,3 @@ learned when you create your project in the next section.
 [about-version-control]: http://git-scm.com/book/en/Getting-Started-About-Version-Control
 [git-get-started]: http://git-scm.com/video/what-is-git
 [hp]: http://www.paulgraham.com/hp.html
-[iso8601]: https://en.wikipedia.org/wiki/ISO_8601
