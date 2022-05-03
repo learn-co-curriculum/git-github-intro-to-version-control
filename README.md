@@ -119,6 +119,15 @@ following command in your terminal:
 git config --global init.defaultBranch main
 ```
 
+## Check for Understanding
+
+Before moving on to the next lesson, check for your understanding of this
+material by answering the following questions in your own words:
+
+- What is the purpose of version control?
+- What are the benefits of version control?
+- What are some new Git vocab terms you’ve learned?
+
 ## Conclusion
 
 Git is a widely-used and very valuable tool for managing changes and versions of
